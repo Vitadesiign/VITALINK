@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FARESI - Links</title>
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/SQZrbv3F/d.png">
+    <title>VITA - Links</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/pr1FJMCg/vita-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -15,7 +15,7 @@
         }
 
         body {
-            background-color: #09090b;
+            background-color: #1F1F1F;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -31,7 +31,7 @@
             position: fixed;
             inset: 0;
             z-index: 9999;
-            background-color: #09090b;
+            background-color: #1F1F1F;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,11 +45,11 @@
         }
 
         .loading-screen .card {
-            --bg-color: #09090b;
+            --bg-color: #1F1F1F;
             background-color: var(--bg-color);
             padding: 1rem 2rem;
             border-radius: 1.25rem;
-            border: 1px solid rgba(139,92,246,0.1);
+            border: 1px solid rgba(214,245,39,0.1);
             position: relative;
         }
 
@@ -58,7 +58,7 @@
             position: absolute;
             inset: -1px;
             border-radius: 1.25rem;
-            background: radial-gradient(ellipse at center, rgba(139,92,246,0.08) 0%, transparent 70%);
+            background: radial-gradient(ellipse at center, rgba(214,245,39,0.08) 0%, transparent 70%);
             z-index: -1;
             pointer-events: none;
         }
@@ -101,41 +101,25 @@
             height: 40px;
             line-height: 40px;
             padding-left: 6px;
-            color: #956afa;
+            color: #D6F527;
             animation: spin_4991 4s infinite;
         }
 
         @keyframes spin_4991 {
-            10% {
-                transform: translateY(-102%);
-            }
-            25% {
-                transform: translateY(-100%);
-            }
-            35% {
-                transform: translateY(-202%);
-            }
-            50% {
-                transform: translateY(-200%);
-            }
-            60% {
-                transform: translateY(-302%);
-            }
-            75% {
-                transform: translateY(-300%);
-            }
-            85% {
-                transform: translateY(-402%);
-            }
-            100% {
-                transform: translateY(-400%);
-            }
+            10% { transform: translateY(-102%); }
+            25% { transform: translateY(-100%); }
+            35% { transform: translateY(-202%); }
+            50% { transform: translateY(-200%); }
+            60% { transform: translateY(-302%); }
+            75% { transform: translateY(-300%); }
+            85% { transform: translateY(-402%); }
+            100% { transform: translateY(-400%); }
         }
 
         .loading-bar-track {
             width: 200px;
             height: 2px;
-            background: rgba(139,92,246,0.1);
+            background: rgba(214,245,39,0.1);
             border-radius: 2px;
             margin: 16px auto 0;
             overflow: hidden;
@@ -144,7 +128,7 @@
         .loading-bar-fill {
             width: 0%;
             height: 100%;
-            background: linear-gradient(90deg, #7c3aed, #a78bfa);
+            background: linear-gradient(90deg, #D6F527, #e8ff6e);
             border-radius: 2px;
             transition: width 0.1s linear;
         }
@@ -166,7 +150,7 @@
             transform: translateX(-50%);
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(214,245,39,0.07) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -177,7 +161,7 @@
             right: -200px;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(109,40,217,0.07) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(214,245,39,0.05) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -225,7 +209,7 @@
         .dot-static {
             width: 8px;
             height: 8px;
-            background-color: #8b5cf6;
+            background-color: #D6F527;
             border-radius: 50%;
         }
 
@@ -233,7 +217,7 @@
             position: absolute;
             width: 8px;
             height: 8px;
-            background-color: #8b5cf6;
+            background-color: #D6F527;
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
@@ -257,7 +241,7 @@
             padding: 16px;
             border-radius: 16px;
             border: 1px solid rgba(255,255,255,0.05);
-            background: rgba(24,24,27,0.4);
+            background: rgba(255,255,255,0.04);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             cursor: pointer;
@@ -285,7 +269,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(139,92,246,0.06), transparent);
+            background: linear-gradient(90deg, transparent, rgba(214,245,39,0.06), transparent);
             transition: left 0.5s ease;
         }
 
@@ -294,9 +278,9 @@
         }
 
         .link-btn:hover {
-            border-color: rgba(139,92,246,0.35);
+            border-color: rgba(214,245,39,0.35);
             transform: translateY(-2px) !important;
-            box-shadow: 0 8px 25px -5px rgba(139,92,246,0.12);
+            box-shadow: 0 8px 25px -5px rgba(214,245,39,0.1);
         }
 
         .link-btn:active {
@@ -307,7 +291,7 @@
             width: 44px;
             height: 44px;
             border-radius: 12px;
-            background: #27272a;
+            background: rgba(255,255,255,0.06);
             border: 1px solid rgba(255,255,255,0.05);
             display: flex;
             align-items: center;
@@ -317,14 +301,14 @@
         }
 
         .link-btn:hover .icon-box {
-            background-color: rgba(139,92,246,0.15);
-            border-color: rgba(139,92,246,0.2);
+            background-color: rgba(214,245,39,0.12);
+            border-color: rgba(214,245,39,0.2);
         }
 
         .icon-box svg {
             width: 20px;
             height: 20px;
-            color: #a78bfa;
+            color: #D6F527;
         }
 
         .icon-box.whatsapp-icon svg {
@@ -370,7 +354,7 @@
         .divider {
             width: 100%;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(139,92,246,0.1), transparent);
+            background: linear-gradient(to right, transparent, rgba(214,245,39,0.15), transparent);
             margin-bottom: 24px;
             opacity: 0;
             animation: fadeUp 0.5s ease 0.45s forwards;
@@ -397,7 +381,7 @@
             <div class="loader">
                 <p>loading</p>
                 <div class="words">
-                    <span class="word">FARESi Group</span>
+                    <span class="word">VITA Group</span>
                     <span class="word">Graphic Design</span>
                     <span class="word">Marketing</span>
                     <span class="word">Website Designs</span>
@@ -419,7 +403,7 @@
 
             <div class="name-section">
                 <div class="name-row">
-                    <span class="name-text">FARESI</span>
+                    <span class="name-text">VITA</span>
                     <div class="dot-wrapper">
                         <div class="dot-static"></div>
                         <div class="dot-pulse"></div>
@@ -445,7 +429,7 @@
                     </svg>
                 </a>
 
-                <a href="https://www.facebook.com/faresigroup/?rdid=bIuWT7oRDvdmx11T" target="_blank" class="link-btn">
+                <a href="https://www.facebook.com/profile.php?id=61591915976718" target="_blank" class="link-btn">
                     <div class="icon-box">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -453,7 +437,7 @@
                     </div>
                     <div class="link-info">
                         <div class="link-title">Facebook</div>
-                        <div class="link-desc">facebook.com/faresigroup</div>
+                        <div class="link-desc">facebook.com/vita</div>
                     </div>
                     <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="7" y1="17" x2="17" y2="7"/>
@@ -461,7 +445,7 @@
                     </svg>
                 </a>
 
-                <a href="https://www.instagram.com/faresigroup?igsh=aW9mYjZvdWF0MmFw" target="_blank" class="link-btn">
+                <a href="https://www.instagram.com/vitadesiign?igsh=MTh0M2ZqZWRqZzBzNw==" target="_blank" class="link-btn">
                     <div class="icon-box">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -471,7 +455,7 @@
                     </div>
                     <div class="link-info">
                         <div class="link-title">Instagram</div>
-                        <div class="link-desc">instagram.com/faresigroup</div>
+                        <div class="link-desc">instagram.com/vitadesiign</div>
                     </div>
                     <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="7" y1="17" x2="17" y2="7"/>
@@ -484,7 +468,7 @@
             <div class="divider"></div>
 
             <div class="footer">
-                <span>© 2026 FARESI</span>
+                <span>© 2026 VITA</span>
             </div>
 
         </div>
